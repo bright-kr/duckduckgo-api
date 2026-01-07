@@ -1,11 +1,11 @@
 # DuckDuckGo Search Scraper
 
-[![Promo](https://media.brightdata.com/2025/08/SERP-API-50-off-GitHub-banner_1389_166.png)](https://brightdata.com/products/serp-api/duckduckgo-search)
+[![Promo](https://media.brightdata.com/2025/08/SERP-API-50-off-GitHub-banner_1389_166.png)](https://brightdata.co.kr/products/serp-api/duckduckgo-search)
 
-This repository offers two solutions for extracting data from DuckDuckGo Search Engine Results Pages (SERPs):
+이 리포지토리는 DuckDuckGo 검색 엔진 결과 페이지(SERP)에서 데이터를 추출하기 위한 두 가지 솔루션을 제공합니다:
 
-- **Free DuckDuckGo Scraper:** A tool for scraping DuckDuckGo Search Results at small scale
-- **Enterprise-grade DuckDuckGo SERP API:** A scalable, production-ready solution for high-volume, real-time data extraction (part of [Bright Data's SERP Scraper API](https://brightdata.com/products/serp-api))
+- **무료 DuckDuckGo Scraper:** 소규모로 DuckDuckGo 검색 결과를 スクレイピング하기 위한 도구입니다
+- **엔터프라이즈급 DuckDuckGo SERP API:** 대량·실시간 데이터 추출을 위한 확장 가능하고 프로덕션 준비가 된 솔루션입니다([Bright Data's SERP Scraper API](https://brightdata.co.kr/products/serp-api)의 일부입니다)
 
 ## Table of Contents
 
@@ -30,31 +30,31 @@ This repository offers two solutions for extracting data from DuckDuckGo Search 
 - [Support & Resources](#support--resources)
 
 ## Free DuckDuckGo SERP Scraper
-The Free DuckDuckGo SERP Scraper offers a straightforward method for collecting search result data on a smaller scale. It’s perfect if you need limited data without the overhead of managing proxies or handling high volumes.
+무료 DuckDuckGo SERP Scraper는 소규모로 검색 결과 데이터를 수집하기 위한 간단한 방법을 제공합니다. プロキシ를 관리하거나 대량 처리를 다루는 부담 없이 제한된 데이터가 필요할 때 적합합니다.
 
 <img width="800" alt="free-duckduckgo-serp-scraper" src="https://github.com/luminati-io/duckduckgo-api/blob/main/images/428465443-0472593e-615c-4723-96e7-08f83cb0b477.png" />
 
 ### Setup Requirements
 
 - **Python 3.9+** – [Download Python](https://www.python.org/downloads/)
-- **Required Packages:**
-    - `selenium` (for browser automation)
-    - `webdriver-manager` (for managing browser drivers)
-    - `beautifulsoup4` (for HTML parsing)
+- **필수 패키지:**
+    - `selenium` (브라우저 자동화용)
+    - `webdriver-manager` (브라우저 드라이버 관리용)
+    - `beautifulsoup4` (HTML 파싱용)
 
-Install the packages using:
+다음 명령으로 패키지를 설치합니다:
 ```bash
 pip install selenium webdriver-manager beautifulsoup4
 ```
 
-> **New to Web Scraping?** <br>
-Kickstart your journey with our [Beginner’s Guide to Web Scraping with Python](https://brightdata.com/blog/how-tos/web-scraping-with-python). Then, level up with our [Using Selenium for Web Scraping](https://brightdata.com/blog/how-tos/using-selenium-for-web-scraping) tutorial, and if you’re already comfortable with Selenium, take your skills further with our advanced [SeleniumBase guide](https://brightdata.com/blog/web-data/web-scraping-with-seleniumbase).
+> **Webスクレイピング이 처음이신가요?** <br>
+우리의 [Beginner’s Guide to Web Scraping with Python](https://brightdata.co.kr/blog/how-tos/web-scraping-with-python)으로 여정을 시작해 보십시오. 이후 [Using Selenium for Web Scraping](https://brightdata.co.kr/blog/how-tos/using-selenium-for-web-scraping) 튜토리얼로 한 단계 더 나아가고, 이미 Selenium에 익숙하시다면 고급 [SeleniumBase guide](https://brightdata.co.kr/blog/web-data/web-scraping-with-seleniumbase)로 역량을 더 확장해 보십시오.
 >
 
 ### Quick Start Guide
 
-1. Open the [duckduckgo-serp-scraper.py](https://github.com/triposat/DuckDuckGo-Search-Scraper/blob/main/duckduckgo-serp-scraper/duckduckgo-serp-scraper.py) file.
-2. Customize the search terms as needed:
+1. [duckduckgo-serp-scraper.py](https://github.com/triposat/DuckDuckGo-Search-Scraper/blob/main/duckduckgo-serp-scraper/duckduckgo-serp-scraper.py) 파일을 엽니다.
+2. 필요에 따라 검색어를 사용자 지정합니다:
     
     ```python
     SEARCH_TERMS = [
@@ -63,56 +63,56 @@ Kickstart your journey with our [Beginner’s Guide to Web Scraping with Python]
     ]
     ```
     
-3. Run the script to begin scraping.
+3. 스크립트를 실행하여 スクレイピング을 시작합니다.
 
 ### Sample Output
-Below is a preview of the scraper output:
+아래는 스크레이퍼 출력의 미리보기입니다:
 
 <img width="800" alt="free-duckduckgo-serp-scraper-output" src="https://github.com/luminati-io/duckduckgo-api/blob/main/images/428465286-d6891a93-2b5f-4243-8a17-e2a037c91570.png" />
 
 
 ### Limitations
 
-Keep in mind that while the free scraper is great for basic tasks, it has some important limitations:
+무료 스크레이퍼는 기본 작업에 매우 유용하지만, 다음과 같은 중요한 제한 사항이 있음을 유의하십시오:
 
-- High risk of IP blocking with frequent use
-- Limited request volume capacity
-- Frequent CAPTCHA interruptions
-- Not suitable for production environments
+- 자주 사용할 경우 IPアドレス 차단 위험이 높습니다
+- リクエスト 볼륨 처리 용량이 제한적입니다
+- CAPTCHA 중단이 자주 발생합니다
+- 프로덕션 환경에 적합하지 않습니다
 
-For a scalable and stable solution, consider Bright Data's dedicated API detailed below 👇
+확장 가능하고 안정적인 솔루션을 원하신다면, 아래에 상세히 설명된 Bright Data의 전용 API를 고려해 보십시오 👇
 
 ## DuckDuckGo SERP API
 
-The DuckDuckGo SERP API is part of Bright Data’s comprehensive [SERP Scraper API](https://brightdata.com/products/serp-api) suite. It leverages our industry-leading [DuckDuckGo proxy infrastructure](https://brightdata.com/solutions/duckduckgo-proxies) to deliver real-time DuckDuckGo search results with a single API call.
+DuckDuckGo SERP API는 Bright Data의 포괄적인 [SERP Scraper API](https://brightdata.co.kr/products/serp-api) 제품군의 일부입니다. 업계 최고 수준의 [DuckDuckGo proxy infrastructure](https://brightdata.co.kr/solutions/duckduckgo-proxies)를 활용하여 단일 API 호출로 실시간 DuckDuckGo 검색 결과를 제공합니다.
 
 ### Key Benefits
 
-- **Global Accuracy**: Get tailored results for specific locations worldwide.
-- **Pay-Per-Success**: You pay only for successful requests.
-- **Real-Time Data**: Access up-to-date search results in seconds.
-- **Unlimited Scalability**: Handle high-volume scraping effortlessly.
-- **Cost-Efficient**: No need for expensive infrastructure.
-- **Reliable Performance**: Advanced anti-blocking technology ensures consistent results.
-- **24/7 Expert Support**: Get assistance whenever you need it.
+- **글로벌 정확도**: 전 세계 특정 위치에 맞춘 결과를 प्राप्त할 수 있습니다.
+- **Pay-Per-Success**: 성공한 リクエスト에 대해서만 비용을 지불합니다.
+- **실시간 데이터**: 최신 검색 결과를 수초 내로 액세스할 수 있습니다.
+- **무제한 확장성**: 대량 スクレイピング을 손쉽게 처리합니다.
+- **비용 효율성**: 고가의 인프라가 필요하지 않습니다.
+- **신뢰할 수 있는 성능**: 고급 안티-차단 기술로 일관된 결과를 보장합니다.
+- **24/7 전문가 지원**: 필요할 때 언제든 지원을 받을 수 있습니다.
 
-📌 Try Before You Buy: Experience our solution with the [SERP API Live Demo](https://brightdata.com/products/serp-api/duckduckgo-search).
+📌 구매 전 사용해 보기: [SERP API Live Demo](https://brightdata.co.kr/products/serp-api/duckduckgo-search)로 솔루션을 경험해 보십시오.
 
 <img width="800" alt="bright-data-serp-api-playground" src="https://github.com/luminati-io/duckduckgo-api/blob/main/images/428471522-fc60e165-e4db-41d2-93eb-2b6a01398353.png" />
 
 ### Getting Started
 
-1. [Create a Bright Data account](https://brightdata.com/) (new users receive a $5 credit).
-2. Generate your [API key](https://docs.brightdata.com/general/account/api-token).
-3. Follow our [step-by-step configuration guide](https://github.com/triposat/DuckDuckGo-Search-Scraper/blob/main/setup-serp-api.md) to integrate the SERP API.
+1. [Bright Data account를 생성합니다](https://brightdata.co.kr/) (신규 사용자는 $5 크레딧을 받습니다).
+2. [API key](https://docs.brightdata.com/general/account/api-token)를 생성합니다.
+3. [단계별 구성 가이드](https://github.com/triposat/DuckDuckGo-Search-Scraper/blob/main/setup-serp-api.md)를 따라 SERP API를 통합합니다.
 
 ## Implementation Methods
 
-You can integrate the DuckDuckGo SERP API into your workflow using one of two approaches:
+다음 두 가지 접근 방식 중 하나로 DuckDuckGo SERP API를 워크플로에 통합할 수 있습니다:
 
 ### Direct API Access
 
-Make a direct request to Bright Data’s API endpoint.
+Bright Data의 API 엔드포인트로 직접 リクエスト를 전송합니다.
 
 #### cURL Example
 
@@ -155,7 +155,7 @@ print("Response saved!")
 
 ### Native Proxy-Based Access
 
-Use proxy routing for direct access to search results.
+프로キ시 라우팅을 사용하여 검색 결과에 직접 액세스합니다.
 
 #### cURL Example
 
@@ -195,21 +195,21 @@ with open("duckduckgo-scraper-api-result.html", "w", encoding="utf-8") as file:
 print("Response saved!")
 ```
 
-> Note: For production use with the native proxy approach, installing Bright Data’s SSL certificate is recommended. Refer to our [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate) for details.
+> 참고: 네이티브 プロキシ 접근 방식을 프로덕션에서 사용하려면 Bright Data의 SSL 인증서 설치를 권장합니다. 자세한 내용은 [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)를 참조하십시오.
 > 
 
-👉 For a full preview of the HTML output, see the [complete result](https://github.com/triposat/DuckDuckGo-Search-Scraper/blob/main/duckduckgo-scraper-api-output/duckduckgo-scraper-api-result.html).
+👉 HTML 출력의 전체 미리보기를 보려면 [complete result](https://github.com/triposat/DuckDuckGo-Search-Scraper/blob/main/duckduckgo-scraper-api-output/duckduckgo-scraper-api-result.html)를 확인하십시오.
 
 
 ## DuckDuckGo Search Query Parameters
 
-Fine-tune your search results by using various query parameters.
+다양한 쿼리 파라미터를 사용하여 검색 결과를 미세 조정할 수 있습니다.
 
 ### Localization
 
 #### Country and Language (`kl`)
 
-Specifies the country and language for search results.
+검색 결과의 국가 및 언어를 지정합니다.
 
 *Example:*
 
@@ -219,11 +219,11 @@ curl --proxy brd.superproxy.io:33335 \
      "https://duckduckgo.com/?q=best+coffee+brands&kl=it-it"
 ```
 
-This returns search results tailored for Italy.
+이는 이탈리아에 맞춤화된 검색 결과를 반환합니다.
 
 #### Interface Language (`kad`)
 
-Controls the language of the DuckDuckGo interface.
+DuckDuckGo 인터페이스의 언어를 제어합니다.
 
 *Example:*
 
@@ -231,17 +231,17 @@ Controls the language of the DuckDuckGo interface.
 https://duckduckgo.com/?q=photo+editing+tools&kad=de
 ```
 
-This keeps the search content in English while displaying the interface in German.
+이는 검색 콘텐츠는 영어로 유지하면서, 인터페이스는 독일어로 표시합니다.
 
 ### Safe Search Configuration (`kp`)
 
-Adjusts content filtering for adult material.
+성인 콘텐츠에 대한 필터링을 조정합니다.
 
 #### Values
 
-- `1` – Strict Safe Search
-- `-1` – Moderate
-- `-2` – Off
+- `1` – 엄격한 Safe Search
+- `-1` – 보통
+- `-2` – 끔
 
 *Example:*
 
@@ -249,19 +249,19 @@ Adjusts content filtering for adult material.
 https://duckduckgo.com/?q=swimsuit&kp=1
 ```
 
-Returns only family-safe results for *"swimsuit”.*
+*"swimsuit”.*에 대해 가족 친화적인 결과만 반환합니다.
 
 ### Time Range Filtering (`df`)
 
-Limits search results to a specific time frame.
+검색 결과를 특정 기간으로 제한합니다.
 
 #### Values
 
-- `d` – Past day
-- `w` – Past week
-- `m` – Past month
-- `y` – Past year
-- *Custom range:* e.g., `2025-03-01..2025-03-10`
+- `d` – 지난 하루
+- `w` – 지난 1주
+- `m` – 지난 1개월
+- `y` – 지난 1년
+- *사용자 지정 범위:* 예: `2025-03-01..2025-03-10`
 
 *Example:*
 
@@ -269,20 +269,20 @@ Limits search results to a specific time frame.
 https://duckduckgo.com/?q=iphone+15+review&df=w
 ```
 
-Shows only recent reviews (within the last week).
+최근 리뷰(지난 1주 이내)만 표시합니다.
 
 ### Device Targeting (`brd_mobile`)
 
-Simulate searches from various device types.
+다양한 디바이스 유형에서의 검색을 시뮬레이션합니다.
 
 #### Options
 
-- `0` – Desktop (default)
-- `1` – Random mobile device
-- `ios` or `iphone` – iPhone
-- `ipad` or `ios_tablet` – iPad
-- `android` – Android phone
-- `android_tablet` – Android tablet
+- `0` – 데스크톱(기본값)
+- `1` – 랜덤 모바일 디바이스
+- `ios` 또는 `iphone` – iPhone
+- `ipad` 또는 `ios_tablet` – iPad
+- `android` – Android 휴대폰
+- `android_tablet` – Android 태블릿
 
  *Example:*
 
@@ -290,38 +290,38 @@ Simulate searches from various device types.
 https://duckduckgo.com/?q=top+travel+apps&brd_mobile=ios
 ```
 
-This simulates an iPhone user. You might see app store links, mobile-focused content, or AMP pages.
+이는 iPhone 사용자를 시뮬레이션합니다. App Store 링크, 모바일 중심 콘텐츠 또는 AMP 페이지가 표시될 수 있습니다.
 
 ### Browser Emulation (`brd_browser`)
 
-Specify the browser’s user-agent for the request.
+리クエスト에 사용할 브라우저의 user-agent를 지정합니다.
 
 #### Options
 
-- Default (random browser)
+- Default (랜덤 브라우저)
 - `chrome` – Google Chrome
 - `safari` – Safari
-- `firefox` – Mozilla Firefox *(not compatible with `brd_mobile=1`)*
+- `firefox` – Mozilla Firefox *( `brd_mobile=1` 와 호환되지 않습니다)*
 
 *Example:*
 
 ```bash
 https://duckduckgo.com/?q=best+vpn+services&brd_browser=safari
 ```
-This simulates a Safari browser, providing insights into how content is displayed and ranked on that platform.
+이는 Safari 브라우저를 시뮬레이션하여 해당 플랫폼에서 콘텐츠가 어떻게 표시되고 랭킹되는지에 대한 인사이트를 제공합니다.
 
 ## Practical Example
 
-You're monitoring competitors' pricing pages for *"budget laptops under £500"* in the UK, targeting mobile users.
+영국에서 모바일 사용자를 타겟으로 *"budget laptops under £500"*에 대한 경쟁사의 가격 페이지를 모니터링하고 있다고 가정합니다.
 
-Your goal is to:
+목표는 다음과 같습니다:
 
-- Simulate a UK-based mobile user
-- Get localized English results (UK-specific retailers, currency)
-- Use a mobile Chrome user agent (to capture mobile-specific results like AMP pages)
-- Focus on recent product listicles or deals
+- 영국 기반 모바일 사용자를 시뮬레이션합니다
+- 로컬라이즈된 영어 결과(영국 특정 리테일러, 통화)를 प्राप्त합니다
+- 모바일 Chrome user agent를 사용합니다(AMP 페이지 등 모바일 전용 결과를 포착하기 위해)
+- 최신 제품 리스트형 글 또는 딜에 집중합니다
 
-Combine these requirements in a single cURL command:
+이 요구 사항을 단일 cURL 명령으로 결합합니다:
 
 ```bash
 curl --proxy brd.superproxy.io:33335 \
@@ -334,12 +334,12 @@ df=w&\
 brd_mobile=android&\
 brd_browser=chrome"
 ```
-🎯 This fetches **mobile-first**, **localized**, and **recent** content.
+🎯 이는 **모바일 우선**, **로컬라이즈됨**, **최신** 콘텐츠를 가져옵니다.
 
 ## Support & Resources
 
-- **Documentation:** [SERP API Documentation](https://docs.brightdata.com/scraping-automation/serp-api/)
-- **Related APIs:**
+- **문서:** [SERP API Documentation](https://docs.brightdata.com/scraping-automation/serp-api/)
+- **관련 API:**
     - [SERP API](https://github.com/luminati-io/serp-api)
     - [Google Search API](https://github.com/luminati-io/google-search-api)
     - [Google News Scraper](https://github.com/luminati-io/Google-News-Scraper)
@@ -348,8 +348,8 @@ brd_browser=chrome"
     - [Google Hotels API](https://github.com/luminati-io/google-hotels-api)
     - [Google Flights API](https://github.com/luminati-io/google-flights-api)
     - [Web Unlocker API](https://github.com/luminati-io/web-unlocker-api)
-- **Use Cases:**
-    - [SEO & SERP Tracking](https://brightdata.com/use-cases/serp-tracking)
-    - [Travel Industry Data](https://brightdata.com/use-cases/travel)
-- **Additional Reading:** [Best SERP APIs](https://brightdata.com/blog/web-data/best-serp-apis)
-- **Contact Support:** [support@brightdata.com](mailto:support@brightdata.com)
+- **사용 사례:**
+    - [SEO & SERP Tracking](https://brightdata.co.kr/use-cases/serp-tracking)
+    - [Travel Industry Data](https://brightdata.co.kr/use-cases/travel)
+- **추가 읽을거리:** [Best SERP APIs](https://brightdata.co.kr/blog/web-data/best-serp-apis)
+- **지원 문의:** [support@brightdata.com](mailto:support@brightdata.com)
