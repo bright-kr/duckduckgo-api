@@ -32,7 +32,7 @@
 ## Free DuckDuckGo SERP Scraper
 무료 DuckDuckGo SERP Scraper는 소규모로 검색 결과 데이터를 수집하기 위한 간단한 방법을 제공합니다. プロキシ를 관리하거나 대량 처리를 다루는 부담 없이 제한된 데이터가 필요할 때 적합합니다.
 
-<img width="800" alt="free-duckduckgo-serp-scraper" src="https://github.com/luminati-io/duckduckgo-api/blob/main/images/428465443-0472593e-615c-4723-96e7-08f83cb0b477.png" />
+<img width="800" alt="free-duckduckgo-serp-scraper" src="https://github.com/bright-kr/duckduckgo-api/blob/main/images/428465443-0472593e-615c-4723-96e7-08f83cb0b477.png" />
 
 ### Setup Requirements
 
@@ -68,7 +68,7 @@ pip install selenium webdriver-manager beautifulsoup4
 ### Sample Output
 아래는 스크레이퍼 출력의 미리보기입니다:
 
-<img width="800" alt="free-duckduckgo-serp-scraper-output" src="https://github.com/luminati-io/duckduckgo-api/blob/main/images/428465286-d6891a93-2b5f-4243-8a17-e2a037c91570.png" />
+<img width="800" alt="free-duckduckgo-serp-scraper-output" src="https://github.com/bright-kr/duckduckgo-api/blob/main/images/428465286-d6891a93-2b5f-4243-8a17-e2a037c91570.png" />
 
 
 ### Limitations
@@ -98,7 +98,7 @@ DuckDuckGo SERP API는 Bright Data의 포괄적인 [SERP Scraper API](https://br
 
 📌 구매 전 사용해 보기: [SERP API Live Demo](https://brightdata.co.kr/products/serp-api/duckduckgo-search)로 솔루션을 경험해 보십시오.
 
-<img width="800" alt="bright-data-serp-api-playground" src="https://github.com/luminati-io/duckduckgo-api/blob/main/images/428471522-fc60e165-e4db-41d2-93eb-2b6a01398353.png" />
+<img width="800" alt="bright-data-serp-api-playground" src="https://github.com/bright-kr/duckduckgo-api/blob/main/images/428471522-fc60e165-e4db-41d2-93eb-2b6a01398353.png" />
 
 ### Getting Started
 
@@ -340,14 +340,14 @@ brd_browser=chrome"
 
 - **문서:** [SERP API Documentation](https://docs.brightdata.com/scraping-automation/serp-api/)
 - **관련 API:**
-    - [SERP API](https://github.com/luminati-io/serp-api)
-    - [Google Search API](https://github.com/luminati-io/google-search-api)
-    - [Google News Scraper](https://github.com/luminati-io/Google-News-Scraper)
-    - [Google Trends API](https://github.com/luminati-io/google-trends-api)
-    - [Google Reviews API](https://github.com/luminati-io/google-reviews-api)
-    - [Google Hotels API](https://github.com/luminati-io/google-hotels-api)
-    - [Google Flights API](https://github.com/luminati-io/google-flights-api)
-    - [Web Unlocker API](https://github.com/luminati-io/web-unlocker-api)
+    - [SERP API](https://github.com/bright-kr/serp-api)
+    - [Google Search API](https://github.com/bright-kr/google-search-api)
+    - [Google News Scraper](https://github.com/bright-kr/Google-News-Scraper)
+    - [Google Trends API](https://github.com/bright-kr/google-trends-api)
+    - [Google Reviews API](https://github.com/bright-kr/google-reviews-api)
+    - [Google Hotels API](https://github.com/bright-kr/google-hotels-api)
+    - [Google Flights API](https://github.com/bright-kr/google-flights-api)
+    - [Web Unlocker API](https://github.com/bright-kr/web-unlocker-api)
 - **사용 사례:**
     - [SEO & SERP Tracking](https://brightdata.co.kr/use-cases/serp-tracking)
     - [Travel Industry Data](https://brightdata.co.kr/use-cases/travel)
