@@ -4,7 +4,7 @@
 
 이 리포지토리는 DuckDuckGo 검색 엔진 결과 페이지(SERP)에서 데이터를 추출하기 위한 두 가지 솔루션을 제공합니다:
 
-- **무료 DuckDuckGo Scraper:** 소규모로 DuckDuckGo 검색 결과를 スクレイピング하기 위한 도구입니다
+- **무료 DuckDuckGo Scraper:** 소규모로 DuckDuckGo 검색 결과를 스크레이핑하기 위한 도구입니다
 - **엔터프라이즈급 DuckDuckGo SERP API:** 대량·실시간 데이터 추출을 위한 확장 가능하고 프로덕션 준비가 된 솔루션입니다([Bright Data's SERP Scraper API](https://brightdata.co.kr/products/serp-api)의 일부입니다)
 
 ## Table of Contents
@@ -30,7 +30,7 @@
 - [Support & Resources](#support--resources)
 
 ## Free DuckDuckGo SERP Scraper
-무료 DuckDuckGo SERP Scraper는 소규모로 검색 결과 데이터를 수집하기 위한 간단한 방법을 제공합니다. プロキシ를 관리하거나 대량 처리를 다루는 부담 없이 제한된 데이터가 필요할 때 적합합니다.
+무료 DuckDuckGo SERP Scraper는 소규모로 검색 결과 데이터를 수집하기 위한 간단한 방법을 제공합니다. 프록시를 관리하거나 대량 처리를 다루는 부담 없이 제한된 데이터가 필요할 때 적합합니다.
 
 <img width="800" alt="free-duckduckgo-serp-scraper" src="https://github.com/bright-kr/duckduckgo-api/blob/main/images/428465443-0472593e-615c-4723-96e7-08f83cb0b477.png" />
 
@@ -47,7 +47,7 @@
 pip install selenium webdriver-manager beautifulsoup4
 ```
 
-> **Webスクレイピング이 처음이신가요?** <br>
+> **Web스크레이핑이 처음이신가요?** <br>
 우리의 [Beginner’s Guide to Web Scraping with Python](https://brightdata.co.kr/blog/how-tos/web-scraping-with-python)으로 여정을 시작해 보십시오. 이후 [Using Selenium for Web Scraping](https://brightdata.co.kr/blog/how-tos/using-selenium-for-web-scraping) 튜토리얼로 한 단계 더 나아가고, 이미 Selenium에 익숙하시다면 고급 [SeleniumBase guide](https://brightdata.co.kr/blog/web-data/web-scraping-with-seleniumbase)로 역량을 더 확장해 보십시오.
 >
 
@@ -63,7 +63,7 @@ pip install selenium webdriver-manager beautifulsoup4
     ]
     ```
     
-3. 스크립트를 실행하여 スクレイピング을 시작합니다.
+3. 스크립트를 실행하여 스크레이핑을 시작합니다.
 
 ### Sample Output
 아래는 스크레이퍼 출력의 미리보기입니다:
@@ -75,8 +75,8 @@ pip install selenium webdriver-manager beautifulsoup4
 
 무료 스크레이퍼는 기본 작업에 매우 유용하지만, 다음과 같은 중요한 제한 사항이 있음을 유의하십시오:
 
-- 자주 사용할 경우 IPアドレス 차단 위험이 높습니다
-- リクエスト 볼륨 처리 용량이 제한적입니다
+- 자주 사용할 경우 IP 주소 차단 위험이 높습니다
+- 요청 볼륨 처리 용량이 제한적입니다
 - CAPTCHA 중단이 자주 발생합니다
 - 프로덕션 환경에 적합하지 않습니다
 
@@ -89,9 +89,9 @@ DuckDuckGo SERP API는 Bright Data의 포괄적인 [SERP Scraper API](https://br
 ### Key Benefits
 
 - **글로벌 정확도**: 전 세계 특정 위치에 맞춘 결과를 प्राप्त할 수 있습니다.
-- **Pay-Per-Success**: 성공한 リクエスト에 대해서만 비용을 지불합니다.
+- **Pay-Per-Success**: 성공한 요청에 대해서만 비용을 지불합니다.
 - **실시간 데이터**: 최신 검색 결과를 수초 내로 액세스할 수 있습니다.
-- **무제한 확장성**: 대량 スクレイピング을 손쉽게 처리합니다.
+- **무제한 확장성**: 대량 스크레이핑을 손쉽게 처리합니다.
 - **비용 효율성**: 고가의 인프라가 필요하지 않습니다.
 - **신뢰할 수 있는 성능**: 고급 안티-차단 기술로 일관된 결과를 보장합니다.
 - **24/7 전문가 지원**: 필요할 때 언제든 지원을 받을 수 있습니다.
@@ -112,7 +112,7 @@ DuckDuckGo SERP API는 Bright Data의 포괄적인 [SERP Scraper API](https://br
 
 ### Direct API Access
 
-Bright Data의 API 엔드포인트로 직접 リクエスト를 전송합니다.
+Bright Data의 API 엔드포인트로 직접 요청를 전송합니다.
 
 #### cURL Example
 
@@ -195,7 +195,7 @@ with open("duckduckgo-scraper-api-result.html", "w", encoding="utf-8") as file:
 print("Response saved!")
 ```
 
-> 참고: 네이티브 プロキシ 접근 방식을 프로덕션에서 사용하려면 Bright Data의 SSL 인증서 설치를 권장합니다. 자세한 내용은 [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)를 참조하십시오.
+> 참고: 네이티브 프록시 접근 방식을 프로덕션에서 사용하려면 Bright Data의 SSL 인증서 설치를 권장합니다. 자세한 내용은 [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)를 참조하십시오.
 > 
 
 👉 HTML 출력의 전체 미리보기를 보려면 [complete result](https://github.com/triposat/DuckDuckGo-Search-Scraper/blob/main/duckduckgo-scraper-api-output/duckduckgo-scraper-api-result.html)를 확인하십시오.
